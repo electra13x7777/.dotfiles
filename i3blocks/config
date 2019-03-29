@@ -1,0 +1,98 @@
+command=~/.scripts/statusbar/$BLOCK_NAME
+separator_block_width=15
+markup=pango
+
+[i3mpd]
+label=
+command= python /lib64/i3blocks/i3mpd.py
+color=#21b089
+interval=1
+
+# Spotify icon \uF1BC
+#[spotify]
+#label=
+#command=python /lib/i3blocks/spotify.py
+#color=#21b089
+#interval=1
+
+# Displays (Band - Song)
+#[mediaplayer]
+#command=printf "⏯  " && /lib64/i3blocks/mediaplayer
+#instance=spotify
+#interval=5
+#signal=10
+#color=#21b089
+
+[record]
+command=cat /tmp/recordingicon
+interval=once
+signal=9
+
+[music]
+label=🎼
+interval=once
+signal=11
+
+#[news]
+#label=📰
+#interval=once
+#signal=6
+
+[pacpackages]
+label=📦
+interval=once
+signal=8
+
+#[torrent]
+#interval=20
+#signal=7
+
+[weather]
+command=weather
+interval=3600
+signal=5
+
+#[mailbox]
+#label=📬
+#interval=180
+#signal=12
+
+#[memory]
+#interval=30
+#label=🧠
+
+[cpu]
+interval=15
+label=CPU:
+color=#fa3d0d
+
+#[disk]
+#interval=60
+#command=disk /
+
+[disk]
+interval=60
+command=disk /home HDD
+
+color=#357fd5
+
+[volume]
+interval=once
+signal=10
+
+[battery]
+command=battery BAT1
+interval=10
+
+[clock]
+#label=📅
+interval=30
+color=#9fddd5
+
+[internet]
+#command= printf " \uf012"
+#label=
+interval=30
+
+#[help]
+#interval=once
